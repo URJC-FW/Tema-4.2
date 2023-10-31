@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 router.post('/saveRandom', (req, res) => {
 
-    let info = req.query.key;
+    let info = req.body.key;
 
     let response = {
         key: info,
