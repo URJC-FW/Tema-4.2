@@ -18,7 +18,7 @@ async function generateRandom(){
 
     const newRow = document.createElement("tr")
     const cell1 = document.createElement("td")
-    cell1.textContent = key
+    cell1.textContent = info.key
     const cell2 = document.createElement("td")
     cell2.textContent = info.value
     newRow.appendChild(cell1)
