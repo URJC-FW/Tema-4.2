@@ -14,6 +14,7 @@ router.post('/saveRandom', (req, res) => {
     let info = req.query.key;
 
     let response = {
+        key: info,
         value: Math.ceil(Math.random() * 100)
     }
 
