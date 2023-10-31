@@ -7,8 +7,8 @@ import router from './router.js';
 const app = express();
 
 app.set('views', __dirname + '/../views');
-app.set('view engine', 'mustache');
-app.engine('mustache', mustacheExpress());
+app.set('view engine', 'html');
+app.engine('html', mustacheExpress(), ".html");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
